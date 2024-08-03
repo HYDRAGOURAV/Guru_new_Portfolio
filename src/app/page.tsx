@@ -47,6 +47,7 @@ import pepsi  from "../../public/image/Pepsi.jpeg";
 export default function Home() {
   const [useTypeeffect] = useTypewriter({
     words: ["Developer..|", "Designer..|", "& Learner..|"],
+    loop: 1000,
     typeSpeed: 100,
     deleteSpeed: 40,
   });  
