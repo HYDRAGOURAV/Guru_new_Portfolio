@@ -49,19 +49,13 @@ export default function Home() {
     words: ["Developer..|", "Designer..|", "& Learner..|"],
     loop: 1000,
     typeSpeed: 100,
-    deleteSpeed: 40,
-  });  
- 
+    deleteSpeed: 40,});  
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
+    setIsOpen(!isOpen);};
   AOS.init();
   return (
-    <>
-  
-   <nav className="navbar">
+    <><nav className="navbar">
       <div className="navbar-container">
         <div className="logo">
           <Link href="/"> <Image src={logo} alt="Picture of the author" /></Link>
@@ -69,6 +63,8 @@ export default function Home() {
         <div className={`menu-icon ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
           <div className="bar"></div>
           <div className="bar"></div>
+
+          
           <div className="bar"></div>
         </div>
         <ul className={`nav-menu ${isOpen ? 'open' : ''}`}>
@@ -91,7 +87,6 @@ export default function Home() {
     <div>
       <br />
       <h1></h1>
-       
     </div>
       <section className="First_Page">
         <ul className="background">
